@@ -1,0 +1,32 @@
+ion-toolbar {
+    height: 4rem;
+    display: flex;
+
+    ion-title {
+        font-size: xx-large;
+        font-weight: 600;
+    }
+
+    ion-buttons {
+        height: 100%;
+
+        ion-button {
+            height: 100%;
+            font-size: large;
+
+            ion-icon{
+                color: var(--ion-color-bg-blue);
+            }
+        }
+    }
+}
+
+.active{
+    ion-icon{
+        color: var(--ion-color-dark-blue) !important;
+    }
+
+    ion-text{
+        color: var(--ion-color-dark-blue);
+    }
+}

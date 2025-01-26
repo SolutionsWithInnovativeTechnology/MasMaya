@@ -1,7 +1,7 @@
-<ion-tabs>
-  <ion-tab-bar slot="bottom" color="primary">
+<ion-tabs *ngIf="!isLargeScreen">
+  <ion-tab-bar slot="bottom" class="ion-justify-content-evenly">
     <ion-tab-button tab="historia" href="/historia">
-      <ion-icon aria-hidden="true" name="home"></ion-icon>
+      <ion-icon aria-hidden="true" name="book"></ion-icon>
       <ion-label>Historia</ion-label>
     </ion-tab-button>
 
@@ -10,7 +10,7 @@
       <ion-label>Juegos</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="clasificacion" href="/clasificacion" disabled="true">
+    <ion-tab-button tab="clasificacion" href="/clasificacion">
       <ion-icon aria-hidden="true" name="podium"></ion-icon>
       <ion-label>Clasificación</ion-label>
     </ion-tab-button>

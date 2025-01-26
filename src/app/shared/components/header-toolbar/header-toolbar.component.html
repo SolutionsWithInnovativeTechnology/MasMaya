@@ -1,0 +1,30 @@
+<ion-toolbar *ngIf="isLargeScreen" color="primary">
+  <ion-title color="bg-blue" slot="start">+Maya</ion-title>
+  <ion-buttons slot="end" color="text">
+    <ion-button routerLink="/tabs/historia" routerLinkActive="active">
+      <ion-icon name="book" slot="start" aria-hidden="true"></ion-icon>
+      <ion-text color="bg-blue">Historia</ion-text>
+    </ion-button>
+    <ion-button routerLink="/tabs/juegos" routerLinkActive="active">
+      <ion-icon name="game-controller" slot="start" aria-hidden="true"></ion-icon>
+      <ion-text color="bg-blue">Juegos</ion-text>
+    </ion-button>
+    <ion-button routerLink="/tabs/clasificacion" routerLinkActive="active">
+      <ion-icon name="podium" slot="start" aria-hidden="true"></ion-icon>
+      <ion-text color="bg-blue">Clasificación</ion-text>
+    </ion-button>
+    <ion-button routerLink="/tabs/perfil" disabled="true">
+      <ion-icon name="person-circle" slot="start" aria-hidden="true"></ion-icon>
+      <ion-text slot="end" color="bg-blue">Perfil</ion-text>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-toolbar *ngIf="!isLargeScreen" color="bg-blue">
+  <ion-title slot="secondary" color="primary">+Maya</ion-title>
+  <ion-buttons slot="end" color="text">
+    <ion-button routerLink="/tabs/perfil" aria-label="Perfil">
+      <ion-icon name="person-circle-outline" color="primary" slot="icon-only" aria-hidden="true"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>

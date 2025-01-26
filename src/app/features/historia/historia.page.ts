@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonToolbar, IonTitle } from '@ionic/angular/standalone';
-import { HeaderToolbarComponent } from '../header-toolbar/header-toolbar.component';
+import { HeaderToolbarComponent } from '../../shared/components/header-toolbar/header-toolbar.component';
 
 @Component({
   selector: 'app-historia',

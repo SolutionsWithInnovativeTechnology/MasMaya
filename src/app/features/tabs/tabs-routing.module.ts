@@ -1,5 +1,6 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
+import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
   {
@@ -37,3 +38,8 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
 ];
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class TabsPageRoutingModule {}
