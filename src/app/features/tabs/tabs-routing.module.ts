@@ -15,9 +15,33 @@ export const routes: Routes = [
       },
       {
         path: 'juegos',
-        loadComponent: () =>
-          import('../juegos/juegos.page').then((m) => m.JuegosPage),
-        
+        children: [
+          {
+            path: '',
+            loadComponent: () =>
+              import('../juegos/juegos.page').then((m) => m.JuegosPage),
+          },
+          {
+            path: 'numeros',
+            loadComponent: () =>
+              import('../juegos/numeros/numeros.page').then((m) => m.NumerosPage),
+          },
+          {
+            path: 'frutas',
+            loadComponent: () =>
+              import('../juegos/frutas/frutas.page').then((m) => m.FrutasPage),
+          },
+          {
+            path: 'frases',
+            loadComponent: () =>
+              import('../juegos/frases/frases.page').then((m) => m.FrasesPage),
+          },
+          {
+            path: 'animales',
+            loadComponent: () =>
+              import('../juegos/animales/animales.page').then((m) => m.AnimalesPage),
+          },
+        ]
       },
       {
         path: 'clasificacion',

@@ -13,7 +13,7 @@
       <ion-icon name="podium" slot="start" aria-hidden="true"></ion-icon>
       <ion-text color="bg-blue">Clasificación</ion-text>
     </ion-button>
-    <ion-button routerLink="/tabs/perfil" disabled="true">
+    <ion-button routerLink="/tabs/perfil">
       <ion-icon name="person-circle" slot="start" aria-hidden="true"></ion-icon>
       <ion-text slot="end" color="bg-blue">Perfil</ion-text>
     </ion-button>
@@ -21,7 +21,7 @@
 </ion-toolbar>
 
 <ion-toolbar *ngIf="!isLargeScreen" color="bg-blue">
-  <ion-title slot="secondary" color="primary">+Maya</ion-title>
+  <ion-title slot="start" color="primary">+Maya</ion-title>
   <ion-buttons slot="end" color="text">
     <ion-button routerLink="/tabs/perfil" aria-label="Perfil">
       <ion-icon name="person-circle-outline" color="primary" slot="icon-only" aria-hidden="true"></ion-icon>

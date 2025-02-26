@@ -1,5 +1,17 @@
+<app-header-toolbar></app-header-toolbar>
+
 <ion-content [fullscreen]="true">
-  <div>
-    
-  </div>
+  <main class="menu-grid">
+    <div *ngFor="let button of juegosBtns" class="menu-item">
+      <div 
+        title="{{ button.title }}"
+        class="menu-button"
+        role="button"
+        tabindex="0"
+        [style.background-image]="'url(' + button.bgImage + ')'"
+        [routerLink]="button.route">
+      </div>
+      <div class="button-title">{{ button.title }}</div>
+    </div>  
+  </main>
 </ion-content>

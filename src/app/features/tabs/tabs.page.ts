@@ -1,5 +1,5 @@
 import { Component, EnvironmentInjector, inject } from '@angular/core';
-import { ScreenSizeService } from 'src/app/screen-size-service.service';
+import { ScreenSizeService } from 'src/app/services/screen-size-service.service';
 
 @Component({
   selector: 'app-tabs',

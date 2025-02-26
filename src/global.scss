@@ -35,9 +35,17 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 
+@font-face {
+    font-family: 'Fredoka';
+    src: url('assets/fonts/Fredoka-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html, body {
     --ion-font-family: 'Fredoka', sans-serif;
-    --ion-font-weight: 400;
+    --ion-font-weight: 300;
     --ion-font-style: normal;
     --ion-background-color: var(--ion-color-bg-blue);
 }

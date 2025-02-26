@@ -1,5 +1,5 @@
-<ion-tabs *ngIf="!isLargeScreen">
-  <ion-tab-bar slot="bottom" class="ion-justify-content-evenly">
+<ion-tabs>
+  <ion-tab-bar slot="bottom" class="ion-justify-content-evenly" [ngClass]="{'hidden': isLargeScreen}">
     <ion-tab-button tab="historia" href="/historia">
       <ion-icon aria-hidden="true" name="book"></ion-icon>
       <ion-label>Historia</ion-label>

@@ -10,7 +10,7 @@ import {
   IonToolbar,
 } from '@ionic/angular/standalone';
 
-import { ScreenSizeService } from 'src/app/screen-size-service.service';
+import { ScreenSizeService } from 'src/app/services/screen-size-service.service';
 
 @Component({
   selector: 'app-header-toolbar',
@@ -31,8 +31,7 @@ import { ScreenSizeService } from 'src/app/screen-size-service.service';
 })
 export class HeaderToolbarComponent implements OnInit {
   isLargeScreen: boolean = false;
-  constructor(private screenSizeService: ScreenSizeService) {
-  }
+  constructor(private screenSizeService: ScreenSizeService) {}
 
   ngOnInit() {
     this.screenSizeService.isLargeScreen$.subscribe((isLargeScreen) => {
