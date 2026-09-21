@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="_Maya">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/dist/_Maya.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
